@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		739E9EA81DCB5BB000757309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EA71DCB5BB000757309 /* main.m */; };
+		739E9EAB1DCB5BB000757309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EAA1DCB5BB000757309 /* AppDelegate.m */; };
+		739E9EAD1DCB5BB000757309 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EAC1DCB5BB000757309 /* GameScene.sks */; };
+		739E9EAF1DCB5BB000757309 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EAE1DCB5BB000757309 /* Actions.sks */; };
+		739E9EB21DCB5BB000757309 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EB11DCB5BB000757309 /* GameScene.m */; };
+		739E9EB51DCB5BB000757309 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EB41DCB5BB000757309 /* GameViewController.m */; };
+		739E9EB81DCB5BB000757309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EB61DCB5BB000757309 /* Main.storyboard */; };
+		739E9EBA1DCB5BB000757309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EB91DCB5BB000757309 /* Assets.xcassets */; };
+		739E9EBD1DCB5BB000757309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EBB1DCB5BB000757309 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		739E9EA31DCB5BB000757309 /* SpaceOdyssey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceOdyssey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E9EA71DCB5BB000757309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		739E9EA91DCB5BB000757309 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		739E9EAA1DCB5BB000757309 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		739E9EAC1DCB5BB000757309 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		739E9EAE1DCB5BB000757309 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		739E9EB01DCB5BB000757309 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		739E9EB11DCB5BB000757309 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		739E9EB31DCB5BB000757309 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		739E9EB41DCB5BB000757309 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		739E9EB71DCB5BB000757309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739E9EB91DCB5BB000757309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739E9EBC1DCB5BB000757309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		739E9EBE1DCB5BB000757309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739E9EA01DCB5BB000757309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739E9E9A1DCB5BB000757309 = {
+			isa = PBXGroup;
+			children = (
+				739E9EA51DCB5BB000757309 /* SpaceOdyssey */,
+				739E9EA41DCB5BB000757309 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739E9EA41DCB5BB000757309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739E9EA31DCB5BB000757309 /* SpaceOdyssey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739E9EA51DCB5BB000757309 /* SpaceOdyssey */ = {
+			isa = PBXGroup;
+			children = (
+				739E9EA91DCB5BB000757309 /* AppDelegate.h */,
+				739E9EAA1DCB5BB000757309 /* AppDelegate.m */,
+				739E9EAC1DCB5BB000757309 /* GameScene.sks */,
+				739E9EAE1DCB5BB000757309 /* Actions.sks */,
+				739E9EB01DCB5BB000757309 /* GameScene.h */,
+				739E9EB11DCB5BB000757309 /* GameScene.m */,
+				739E9EB31DCB5BB000757309 /* GameViewController.h */,
+				739E9EB41DCB5BB000757309 /* GameViewController.m */,
+				739E9EB61DCB5BB000757309 /* Main.storyboard */,
+				739E9EB91DCB5BB000757309 /* Assets.xcassets */,
+				739E9EBB1DCB5BB000757309 /* LaunchScreen.storyboard */,
+				739E9EBE1DCB5BB000757309 /* Info.plist */,
+				739E9EA61DCB5BB000757309 /* Supporting Files */,
+			);
+			path = SpaceOdyssey;
+			sourceTree = "<group>";
+		};
+		739E9EA61DCB5BB000757309 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739E9EA71DCB5BB000757309 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739E9EA21DCB5BB000757309 /* SpaceOdyssey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739E9EC11DCB5BB000757309 /* Build configuration list for PBXNativeTarget "SpaceOdyssey" */;
+			buildPhases = (
+				739E9E9F1DCB5BB000757309 /* Sources */,
+				739E9EA01DCB5BB000757309 /* Frameworks */,
+				739E9EA11DCB5BB000757309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceOdyssey;
+			productName = SpaceOdyssey;
+			productReference = 739E9EA31DCB5BB000757309 /* SpaceOdyssey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739E9E9B1DCB5BB000757309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = jakouk;
+				TargetAttributes = {
+					739E9EA21DCB5BB000757309 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 739E9E9E1DCB5BB000757309 /* Build configuration list for PBXProject "SpaceOdyssey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739E9E9A1DCB5BB000757309;
+			productRefGroup = 739E9EA41DCB5BB000757309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739E9EA21DCB5BB000757309 /* SpaceOdyssey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739E9EA11DCB5BB000757309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E9EB81DCB5BB000757309 /* Main.storyboard in Resources */,
+				739E9EAD1DCB5BB000757309 /* GameScene.sks in Resources */,
+				739E9EBA1DCB5BB000757309 /* Assets.xcassets in Resources */,
+				739E9EBD1DCB5BB000757309 /* LaunchScreen.storyboard in Resources */,
+				739E9EAF1DCB5BB000757309 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739E9E9F1DCB5BB000757309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E9EB51DCB5BB000757309 /* GameViewController.m in Sources */,
+				739E9EAB1DCB5BB000757309 /* AppDelegate.m in Sources */,
+				739E9EB21DCB5BB000757309 /* GameScene.m in Sources */,
+				739E9EA81DCB5BB000757309 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		739E9EB61DCB5BB000757309 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739E9EB71DCB5BB000757309 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		739E9EBB1DCB5BB000757309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739E9EBC1DCB5BB000757309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739E9EBF1DCB5BB000757309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		739E9EC01DCB5BB000757309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		739E9EC21DCB5BB000757309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceOdyssey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SpaceOdyssey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		739E9EC31DCB5BB000757309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceOdyssey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SpaceOdyssey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739E9E9E1DCB5BB000757309 /* Build configuration list for PBXProject "SpaceOdyssey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E9EBF1DCB5BB000757309 /* Debug */,
+				739E9EC01DCB5BB000757309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739E9EC11DCB5BB000757309 /* Build configuration list for PBXNativeTarget "SpaceOdyssey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E9EC21DCB5BB000757309 /* Debug */,
+				739E9EC31DCB5BB000757309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739E9E9B1DCB5BB000757309 /* Project object */;
+}
