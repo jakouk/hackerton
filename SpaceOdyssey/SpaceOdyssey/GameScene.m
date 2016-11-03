@@ -15,10 +15,10 @@ typedef NS_OPTIONS(NSInteger, OdysseyType) {
     OdysseyTypeSocreLine = 1 << 2,
 };
 
+
 @interface GameScene () <SKPhysicsContactDelegate>
 
 @end
-
 
 @implementation GameScene {
     
@@ -51,8 +51,9 @@ typedef NS_OPTIONS(NSInteger, OdysseyType) {
     SKAction *backgroundSequence = [SKAction sequence:@[moveBackground, replaceBackground]];
     SKAction *moveBackgroundForever = [SKAction repeatActionForever:backgroundSequence];
     
+
     for( NSInteger i = 0; i < 2 + self.frame.size.height / ( backgroundTexture.size.height * 2 ); ++i ) {
-        
+
         // Create the sprite
         SKSpriteNode* sprite = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
         [sprite setScale:1.0];
@@ -61,6 +62,7 @@ typedef NS_OPTIONS(NSInteger, OdysseyType) {
         //action이 loop됨.
         [sprite runAction:moveBackgroundForever];
         [_movingGameObject addChild:sprite];
+
     }
 }
 
