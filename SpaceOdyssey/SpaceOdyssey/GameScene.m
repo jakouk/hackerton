@@ -13,8 +13,6 @@ typedef NS_ENUM(NSInteger,Game) {
     GameSpace
 };
 
-
-
 @implementation GameScene {
     
     SKNode *_movingGameObject;
@@ -35,10 +33,11 @@ typedef NS_ENUM(NSInteger,Game) {
     SKAction *backgroundSequence = [SKAction sequence:@[moveBackground,replaceBackground]];
     SKAction *moveBackgroundForever = [SKAction repeatActionForever:backgroundSequence];
     
-    for (NSInteger i = 0; i < 2; i+=1) {
+    for (CGFloat i = 0; i < 2; i++) {
         _background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
-        _background.position = CGPointMake(backgroundTexture.size.width/2, backgroundTexture.size.height/2 + backgroundTexture.size.height * i);
-        [_background setSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+        _background.position = CGPointMake(0, backgroundTexture.size.height/2 + backgroundTexture.size.height *i  );
+        [_background setSize:CGSizeMake(self.frame.size.width, _background.frame.size.height)];
+        _background.zPosition = GameBackground;
         [_background runAction:moveBackgroundForever];
         [_movingGameObject addChild:_background];
     }
