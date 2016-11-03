@@ -29,19 +29,34 @@ typedef NS_ENUM(NSInteger,Game) {
     _movingGameObject = [SKNode node];
     [self addChild:_movingGameObject];
     
-    SKTexture* backgroundTexture = [SKTexture textureWithImageNamed:@"spaceBackground"];
-    SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.height duration:12];
+    SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"spaceBackground"];
+    SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.height duration:15];
     SKAction *replaceBackground = [SKAction moveByX:0 y:backgroundTexture.size.height duration:0];
-    SKAction *backgroundSequence = [SKAction sequence:@[moveBackground,replaceBackground]];
+    SKAction *backgroundSequence = [SKAction sequence:@[moveBackground, replaceBackground]];
     SKAction *moveBackgroundForever = [SKAction repeatActionForever:backgroundSequence];
     
-    for (NSInteger i = 0; i < 2; i+=1) {
-        _background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
-        _background.position = CGPointMake(backgroundTexture.size.width/2, backgroundTexture.size.height/2 + backgroundTexture.size.height * i);
-        [_background setSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
-        [_background runAction:moveBackgroundForever];
-        [_movingGameObject addChild:_background];
+    for( NSInteger i = 0; i < 2 + self.frame.size.height / ( backgroundTexture.size.height * 2 ); ++i ) {
+        // Create the sprite
+        //
+        SKSpriteNode* sprite = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
+        [sprite setScale:1.0];
+//        sprite.position = CGPointMake(i * sprite.size.width, sprite.size.height / 2);
+        sprite.position = CGPointMake(0, i * sprite.size.height);
+        
+        //action이 loop됨.
+        [sprite runAction:moveBackgroundForever];
+        [_movingGameObject addChild:sprite];
     }
+    
+    
+    
+    
+//    _background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
+//    _background.position = CGPointMake(0 , backgroundTexture.size.height);
+//    
+//    _background.zPosition = GameBackground;
+//    [_background runAction:moveBackgroundForever];
+//    [_movingGameObject addChild:_background];
 }
 
 
