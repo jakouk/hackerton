@@ -27,8 +27,9 @@ typedef NS_ENUM(NSInteger,Game) {
     _movingGameObject = [SKNode node];
     [self addChild:_movingGameObject];
     
+    
     SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"spaceBackground"];
-    SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.height duration:15];
+    SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.height duration:20];
     SKAction *replaceBackground = [SKAction moveByX:0 y:backgroundTexture.size.height duration:0];
     SKAction *backgroundSequence = [SKAction sequence:@[moveBackground, replaceBackground]];
     SKAction *moveBackgroundForever = [SKAction repeatActionForever:backgroundSequence];
@@ -44,7 +45,6 @@ typedef NS_ENUM(NSInteger,Game) {
         //action이 loop됨.
         [sprite runAction:moveBackgroundForever];
         [_movingGameObject addChild:sprite];
->>>>>>> e6d4d3e52faf1865de22d99901b9f17d12d3262c
     }
     
     
