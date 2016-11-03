@@ -108,6 +108,7 @@ typedef NS_ENUM(NSInteger, objectZposition) {
     _spaceShip.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:_spaceShip.size.height / 2];
     _spaceShip.physicsBody.dynamic = YES;
     _spaceShip.physicsBody.allowsRotation = NO;
+    _spaceShip.physicsBody.restitution = 0.0;
     _spaceShip.zPosition = objectZpositionShip;
     
 //    _spaceShip.zPosition =

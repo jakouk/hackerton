@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5D73CD1DCB75F500424109 /* SpaceShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D73CA1DCB75F500424109 /* SpaceShip.png */; };
+		5F5D73CE1DCB75F500424109 /* SpaceShip1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D73CB1DCB75F500424109 /* SpaceShip1.png */; };
+		5F5D73CF1DCB75F500424109 /* SpaceShip2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D73CC1DCB75F500424109 /* SpaceShip2.png */; };
+		5FC8BEE51DCB9FC3006A421D /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC8BEE41DCB9FC3006A421D /* wall.png */; };
 		739E9EA81DCB5BB000757309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EA71DCB5BB000757309 /* main.m */; };
 		739E9EAB1DCB5BB000757309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E9EAA1DCB5BB000757309 /* AppDelegate.m */; };
 		739E9EAD1DCB5BB000757309 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 739E9EAC1DCB5BB000757309 /* GameScene.sks */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5D73CA1DCB75F500424109 /* SpaceShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceShip.png; sourceTree = "<group>"; };
+		5F5D73CB1DCB75F500424109 /* SpaceShip1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceShip1.png; sourceTree = "<group>"; };
+		5F5D73CC1DCB75F500424109 /* SpaceShip2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceShip2.png; sourceTree = "<group>"; };
+		5FC8BEE41DCB9FC3006A421D /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 		739E9EA31DCB5BB000757309 /* SpaceOdyssey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceOdyssey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739E9EA71DCB5BB000757309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		739E9EA91DCB5BB000757309 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +73,10 @@
 		739E9EA51DCB5BB000757309 /* SpaceOdyssey */ = {
 			isa = PBXGroup;
 			children = (
+				5F5D73CA1DCB75F500424109 /* SpaceShip.png */,
+				5F5D73CB1DCB75F500424109 /* SpaceShip1.png */,
+				5F5D73CC1DCB75F500424109 /* SpaceShip2.png */,
+				5FC8BEE41DCB9FC3006A421D /* wall.png */,
 				739E9EA91DCB5BB000757309 /* AppDelegate.h */,
 				739E9EAA1DCB5BB000757309 /* AppDelegate.m */,
 				739E9EAC1DCB5BB000757309 /* GameScene.sks */,
@@ -150,8 +162,12 @@
 			files = (
 				739E9EB81DCB5BB000757309 /* Main.storyboard in Resources */,
 				739E9EAD1DCB5BB000757309 /* GameScene.sks in Resources */,
+				5FC8BEE51DCB9FC3006A421D /* wall.png in Resources */,
+				5F5D73CD1DCB75F500424109 /* SpaceShip.png in Resources */,
+				5F5D73CF1DCB75F500424109 /* SpaceShip2.png in Resources */,
 				739E9EBA1DCB5BB000757309 /* Assets.xcassets in Resources */,
 				739E9EBD1DCB5BB000757309 /* LaunchScreen.storyboard in Resources */,
+				5F5D73CE1DCB75F500424109 /* SpaceShip1.png in Resources */,
 				739E9EAF1DCB5BB000757309 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +337,7 @@
 				739E9EC31DCB5BB000757309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
