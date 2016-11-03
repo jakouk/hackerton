@@ -1,6 +1,6 @@
 //
 //  GameScene.m
-//  SpaceOdyssey
+//  SpaceGame
 //
 //  Created by jakouk on 2016. 11. 3..
 //  Copyright © 2016년 jakouk. All rights reserved.
@@ -8,75 +8,41 @@
 
 #import "GameScene.h"
 
+typedef NS_ENUM(NSInteger,Game) {
+    GameBackground = 0,
+    GameSpace
+};
+
+
+
 @implementation GameScene {
+    
+    SKNode *_movingGameObject;
+    SKNode *_spaceShip;
+    SKSpriteNode * _background;
     SKShapeNode *_spinnyNode;
     SKLabelNode *_label;
 }
 
 - (void)didMoveToView:(SKView *)view {
-    // Setup your scene here
     
-    // Get label node from scene and store it for use later
-    _label = (SKLabelNode *)[self childNodeWithName:@"//helloLabel"];
+    _movingGameObject = [SKNode node];
+    [self addChild:_movingGameObject];
     
-    _label.alpha = 0.0;
-    [_label runAction:[SKAction fadeInWithDuration:2.0]];
+    SKTexture* backgroundTexture = [SKTexture textureWithImageNamed:@"bg"];
+    SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.width duration:12];
+    SKAction *replaceBackground = [SKAction moveByX:0 y:backgroundTexture.size.width duration:0];
+    SKAction *backgroundSequence = [SKAction sequence:@[moveBackground,replaceBackground]];
+    SKAction *moveBackgroundForever = [SKAction repeatActionForever:backgroundSequence];
     
-    CGFloat w = (self.size.width + self.size.height) * 0.05;
-    
-    // Create shape node to use during mouse interaction
-    _spinnyNode = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(w, w) cornerRadius:w * 0.3];
-    _spinnyNode.lineWidth = 2.5;
-    
-    [_spinnyNode runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:M_PI duration:1]]];
-    [_spinnyNode runAction:[SKAction sequence:@[
-                                                [SKAction waitForDuration:0.5],
-                                                [SKAction fadeOutWithDuration:0.5],
-                                                [SKAction removeFromParent],
-                                                ]]];
+    for (NSInteger i = 0; i < 2; i+=1) {
+        _background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture];
+        _background.position = CGPointMake(backgroundTexture.size.width/2 +backgroundTexture.size.width * i, self.frame.size.height/2);
+        [_background setSize:CGSizeMake(self.view.frame.size.height, self.view.frame.size.height)];
+        [_background runAction:moveBackgroundForever];
+        [_movingGameObject addChild:_background];
+    }
 }
 
-
-- (void)touchDownAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor greenColor];
-    [self addChild:n];
-}
-
-- (void)touchMovedToPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor blueColor];
-    [self addChild:n];
-}
-
-- (void)touchUpAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor redColor];
-    [self addChild:n];
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    // Run 'Pulse' action from 'Actions.sks'
-    [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
-    
-    for (UITouch *t in touches) {[self touchDownAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    for (UITouch *t in touches) {[self touchMovedToPoint:[t locationInNode:self]];}
-}
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-
-
--(void)update:(CFTimeInterval)currentTime {
-    // Called before each frame is rendered
-}
 
 @end
