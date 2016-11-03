@@ -67,7 +67,6 @@ typedef NS_ENUM(NSInteger, objectZposition) {
 
 // 배경 만들기 메소드
 - (void)creatBackground{
-
     SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"spaceBackground"];
     SKAction *moveBackground = [SKAction moveByX:0 y:-backgroundTexture.size.height duration:50];
     SKAction *replaceBackground = [SKAction moveByX:0 y:backgroundTexture.size.height duration:0];
@@ -85,7 +84,6 @@ typedef NS_ENUM(NSInteger, objectZposition) {
         //action이 loop됨.
         [sprite runAction:moveBackgroundForever];
         [_movingGameObject addChild:sprite];
-
     }
 }
 
