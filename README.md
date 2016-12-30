@@ -15,5 +15,7 @@
 - 2인 1조로 Pair Programming 진행 
 
 <br/>
+이미지 클릭시 구동영상으로 이동됩니다.
+<br/>
 
-<img src="https://github.com/jakouk/hackerton/blob/master/spaceship.png">
+[<img src="https://github.com/jakouk/hackerton/blob/master/spaceship.png">](https://youtu.be/sx8Lnlp8P0o)
