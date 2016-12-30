@@ -75,6 +75,8 @@ typedef NS_ENUM(NSInteger, objectZposition) {
     _movingGameObject = [SKNode node];
     [self addChild:_movingGameObject];
     
+    NSLog(@"번들 : %@", [[NSBundle mainBundle] bundleIdentifier]);
+    
     //중력
     self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
     self.physicsWorld.contactDelegate = self;
@@ -374,7 +376,7 @@ typedef NS_ENUM(NSInteger, objectZposition) {
     _scoreLabelNode.text = [NSString stringWithFormat:@"%ld",_score];
     
 //    [self removeAllChildren];
-
+//
 //    [self didMoveToView:self];
     
 //    [self creatSpaceShip];
