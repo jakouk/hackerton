@@ -4,6 +4,7 @@
 
 - 2016.11.03 - 2016.11.04 ( 해커톤 )
 - Objective - C / SpriteKit 이용
+- 디자인 및 
 - 2인 1조로 Pair Programming 진행 
 
 <br/>
