@@ -6,4 +6,6 @@
 - Objective - C / SpriteKit 이용
 - 2인 1조로 Pair Programming 진행 
 
+<br/>
+
 <img src="https://github.com/jakouk/hackerton/blob/master/spaceship.png">
